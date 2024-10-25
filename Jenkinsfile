@@ -17,7 +17,7 @@ pipeline {
 
     post {
         success {
-            echo 'Pipeline completed successfully!'
+            echo 'Thành công!'
         }
         failure {
             echo 'Pipeline failed!'
