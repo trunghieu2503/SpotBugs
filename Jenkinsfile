@@ -6,7 +6,7 @@ pipeline {
         stage('Build') {  // Xây dựng ứng dụng
             steps {
                 echo 'Building the application...'
-                sh 'mvn clean package'  // Sử dụng Maven để build dự án
+                // Nếu cần thêm bước build thì có thể thêm tại đây
             }
         }
 
@@ -16,7 +16,6 @@ pipeline {
                 sh 'mvn test'  // Chạy các bài kiểm thử
             }
         }
-
 
     }
 
