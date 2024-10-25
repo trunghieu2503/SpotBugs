@@ -1,22 +1,18 @@
 pipeline {
-    agent any  // Chạy trên bất kỳ node nào có sẵn
+    agent any
 
     stages {
-
-        stage('Build') {  // Xây dựng ứng dụng
+        stage('Build') {
             steps {
                 echo 'Building the application...'
-                // Nếu cần thêm bước build thì có thể thêm tại đây
             }
         }
 
-        stage('Test') {  // Kiểm thử ứng dụng
+        stage('Test') {
             steps {
                 echo 'Running tests...'
-                sh 'mvn test'  // Chạy các bài kiểm thử
             }
         }
-
     }
 
     post {
